@@ -1,0 +1,13 @@
+# Artpay
+
+> Artpay porta il pagamento rateale nel flusso delle case d'asta, con partner finanziari regolamentati come Santander e Klarna. Il collezionista sceglie il piano e la casa d'asta incassa subito.
+
+## Pagine
+
+- [Case d'asta](https://artpay.art/soluzioni/case-daste) Rate nel post aggiudicazione, con incasso immediato per la casa d'asta.
+- [Come funziona](https://artpay.art/come-funziona) Il flusso di Artpay FAST dal link di pagamento all'incasso.
+- [Partner finanziari](https://artpay.art/partner) I finanziatori regolamentati integrati in Artpay.
+- [Gallerie](https://artpay.art/soluzioni/gallerie) Pagamento rateale nella vendita in galleria.
+- [Fiere](https://artpay.art/soluzioni/fiere) Checkout digitale e rate in stand.
+- [E-commerce arte e collectibles](https://artpay.art/soluzioni/piattaforme) API di pagamento rateale per e-commerce e software del settore.
+- [Domande frequenti](https://artpay.art/faq) Risposte su costi, durata delle rate e integrazione.

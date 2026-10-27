@@ -1,0 +1,17 @@
+{
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/contatti/page": "app/contatti/page.js",
+  "/chi-siamo/page": "app/chi-siamo/page.js",
+  "/come-funziona/page": "app/come-funziona/page.js",
+  "/accedi/page": "app/accedi/page.js",
+  "/demo/page": "app/demo/page.js",
+  "/partner/page": "app/partner/page.js",
+  "/soluzioni/gallerie/page": "app/soluzioni/gallerie/page.js",
+  "/soluzioni/artisti/page": "app/soluzioni/artisti/page.js",
+  "/soluzioni/case-daste/page": "app/soluzioni/case-daste/page.js",
+  "/soluzioni/fiere/page": "app/soluzioni/fiere/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/soluzioni/piattaforme/page": "app/soluzioni/piattaforme/page.js",
+  "/page": "app/page.js"
+}

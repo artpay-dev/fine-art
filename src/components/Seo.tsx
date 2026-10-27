@@ -1,0 +1,1 @@
+export { breadcrumbLd, SITE } from "@/lib/metadata";

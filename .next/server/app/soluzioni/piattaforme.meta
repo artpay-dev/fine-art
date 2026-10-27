@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/soluzioni/layout,_N_T_/soluzioni/piattaforme/layout,_N_T_/soluzioni/piattaforme/page,_N_T_/soluzioni/piattaforme"
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/a0b26c07ef5941b9c274703a1ed1d5d0f295fc632029932d3d1851f966683ad9/$/soluzioni/piattaforme",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/soluzioni/piattaforme/page"
+    },
+    "isFallback": false
+  }
+}

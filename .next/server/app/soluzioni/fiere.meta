@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/soluzioni/layout,_N_T_/soluzioni/fiere/layout,_N_T_/soluzioni/fiere/page,_N_T_/soluzioni/fiere"
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/aca3f07b4b43e26b7f707df6909a2fd9d7dd7a6ca92a1b00723005bd3d9bde11/$/soluzioni/fiere",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/soluzioni/fiere/page"
+    },
+    "isFallback": false
+  }
+}

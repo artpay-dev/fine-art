@@ -1,0 +1,17 @@
+{
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/_not-found/page": "/_not-found",
+  "/contatti/page": "/contatti",
+  "/chi-siamo/page": "/chi-siamo",
+  "/come-funziona/page": "/come-funziona",
+  "/accedi/page": "/accedi",
+  "/demo/page": "/demo",
+  "/partner/page": "/partner",
+  "/soluzioni/gallerie/page": "/soluzioni/gallerie",
+  "/soluzioni/artisti/page": "/soluzioni/artisti",
+  "/soluzioni/case-daste/page": "/soluzioni/case-daste",
+  "/soluzioni/fiere/page": "/soluzioni/fiere",
+  "/faq/page": "/faq",
+  "/soluzioni/piattaforme/page": "/soluzioni/piattaforme",
+  "/page": "/"
+}

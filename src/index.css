@@ -1,0 +1,211 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 0 0% 100%;      /* Near-white #fafcfd */
+    --foreground: 198 31% 6%;      /* Midnight Ink #0B1215 */
+
+    --card: 0 0% 97%;            /* Snow #f8fafd */
+    --card-foreground: 198 31% 6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 198 31% 6%;
+
+    --primary: 234 83% 58%;         /* Electric Iris #3D4FED */
+    --primary-dark: 234 78% 44%;    /* Electric Iris scurizzato per hover */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 97%;      /* Periwinkle Tint #e2e4ff */
+    --secondary-foreground: 198 31% 6%;
+
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 44%;/* Steel #50617a */
+
+    --accent: 0 0% 97%;         /* Periwinkle wash */
+    --accent-foreground: 234 83% 58%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;          /* Mist hairlines */
+    --input: 0 0% 90%;
+    --ring: 234 83% 58%;
+
+    --radius: 0.5rem;               /* 4px discipline */
+
+    /* Raw design-system colors (hex) */
+    --color-electric-iris: #3D4FED;
+    --color-lumen-violet: #6B79F1;
+    --color-midnight-ink: #0B1215;
+    --color-steel: #707070;
+    --color-slate: #707070;
+    --color-pewter: #707070;
+    --color-fog: #0B1215;
+    --color-mist: #E6E6E6;
+    --color-snow: #F7F7F7;
+    --color-paper: #ffffff;
+    --color-ember: #ff6118;
+    --color-solar: #ffbb00;
+    --color-periwinkle-tint: #ECEEFE;
+    --color-iris-glow: #D9DEFC;
+    --color-verdant: #81b81a;
+
+    /* Gradients */
+    --gradient-text: linear-gradient(90deg, #3D4FED 0%, #7B2FE0 100%);
+    --gradient-hero-halo: radial-gradient(circle at 70% 40%, #3D4FED 0%, #7B2FE0 45%, rgba(61,79,237,0) 70%);
+    --gradient-card-wash: linear-gradient(180deg, rgba(61,79,237,0) 0%, #4FB3F6 40%, #7B2FE0 70%, #3D4FED 100%);
+    --gradient-spectrum: linear-gradient(90deg, #7B2FE0 3%, #3D4FED 50%, #4FB3F6 100%);
+
+    /* Shadows */
+    --shadow-mockup: rgba(0, 0, 0, 0.2) 0px 0px 32px 8px;
+    --shadow-dropdown: rgba(50, 50, 93, 0.12) 0px 16px 32px 0px;
+    --shadow-card: rgba(23, 23, 23, 0.06) 0px 3px 6px 0px;
+
+    --sidebar-background: 0 0% 97%;
+    --sidebar-foreground: 0 0% 44%;
+    --sidebar-primary: 234 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 97%;
+    --sidebar-accent-foreground: 198 31% 6%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 234 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  /* Weight-300 whisper-authority headlines with aggressive negative tracking */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+  }
+
+  h1 { letter-spacing: -0.030em; }
+  h2 { letter-spacing: -0.025em; }
+  h3 { letter-spacing: -0.020em; }
+  h4, h5, h6 { letter-spacing: -0.018em; }
+
+  button, [role="button"], a.inline-flex {
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  p, span, a, li, label {
+    letter-spacing: 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Signature gradient text fill — Electric Iris → Steel */
+  .text-gradient {
+    background-image: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .hero-halo {
+    background-image: var(--gradient-hero-halo);
+    animation: halo-drift 14s ease-in-out infinite alternate;
+    will-change: transform;
+  }
+
+  @keyframes halo-drift {
+    0% { transform: translate3d(0, 0, 0) scale(1); }
+    50% { transform: translate3d(-4%, 3%, 0) scale(1.08); }
+    100% { transform: translate3d(3%, -4%, 0) scale(1.04); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-halo { animation: none; }
+  }
+
+  .grain { position: relative; isolation: isolate; }
+  .grain::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1; opacity: 0.15; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .orchestrator-bg {
+    background-image: radial-gradient(ellipse 140% 160% at 30% 25%, #0B1215 0%, #050609 55%, #000000 100%);
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    animation: radial-drift 18s ease-in-out infinite alternate;
+  }
+
+  @keyframes radial-drift {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 60% 55%; }
+    100% { background-position: 20% 90%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .orchestrator-bg { animation: none; }
+  }
+
+  .card-wash {
+    background-image: var(--gradient-card-wash);
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-gradient-shift {
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  @keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    animation: marquee-scroll 50s linear infinite;
+  }
+
+  .marquee-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .hover-scale {
+    transition: transform 0.35s ease;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.04);
+  }
+}
+
+/* Link testuali blu: scuriscono al passaggio del mouse */
+a.text-primary {
+  transition: color 200ms ease;
+}
+a.text-primary:hover {
+  color: hsl(var(--primary-dark));
+}
