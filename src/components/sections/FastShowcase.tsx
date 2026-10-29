@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, QrCode, Check } from "lucide-react";
 import { Section, Heading } from "@/components/sections/Primitives";
-import operaBlue from "@/assets/opera-blue.jpg.asset.json";
+import operaBlue from "@/assets/opera-blue.jpg";
 import RibbonFlow from "@/components/RibbonFlow";
 
 const cardSegments: [number, number][] = [[0.1, 0.3], [0.35, 0.55], [0.62, 0.85]];
@@ -20,7 +20,7 @@ const FastMockup = ({ index }: { index: number }) => {
   if (index === 0) {
     return (
       <div className={`${base} !p-0`}>
-        <img src={operaBlue.url} alt="Opera" className="w-full h-16 shrink-0 object-cover rounded-t-xl" />
+        <img src={operaBlue.src} alt="Opera" className="w-full h-16 shrink-0 object-cover rounded-t-xl" />
         <div className="p-3 flex flex-col flex-1 min-h-0">
           <div className="space-y-2">
             <div>

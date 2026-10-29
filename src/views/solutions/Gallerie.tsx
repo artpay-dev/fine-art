@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import GalleryLogos from "@/components/GalleryLogos";
 import { Section, Heading, PageHero, InfoCard, FinalCta } from "@/components/sections/Primitives";
 import FastShowcase from "@/components/sections/FastShowcase";
-import galleriaAbbondio from "@/assets/galleria-abbondio.jpg.asset.json";
-import fabbricaEos from "@/assets/fabbrica-eos.jpg.asset.json";
-import galleriaFerrero from "@/assets/galleria-ferrero.jpg.asset.json";
-import deChirico from "@/assets/de-chirico.jpg.asset.json";
-import crag from "@/assets/crag.jpg.asset.json";
-import umbertoBenappi from "@/assets/umberto-benappi.png.asset.json";
+import galleriaAbbondio from "@/assets/galleria-abbondio.jpg";
+import fabbricaEos from "@/assets/fabbrica-eos.jpg";
+import galleriaFerrero from "@/assets/galleria-ferrero.jpg";
+import deChirico from "@/assets/de-chirico.jpg";
+import crag from "@/assets/crag.jpg";
+import umbertoBenappi from "@/assets/umberto-benappi.png";
 
 const features = [
   { title: "Incasso immediato", desc: "Il partner finanziario versa il 100% dell'importo alla conferma e la galleria non aspetta i tempi del collezionista." },
@@ -20,12 +20,12 @@ const features = [
 ];
 
 const galleries = [
-  { name: "Galleria Giampaolo Abbondio", logo: galleriaAbbondio.url },
-  { name: "Fabbrica EOS", logo: fabbricaEos.url },
-  { name: "Galleria Ferrero", logo: galleriaFerrero.url },
-  { name: "Raffaella De Chirico", logo: deChirico.url },
-  { name: "CRAG, Chiono Reisova Art Gallery", logo: crag.url },
-  { name: "Umberto Benappi", logo: umbertoBenappi.url },
+  { name: "Galleria Giampaolo Abbondio", logo: galleriaAbbondio.src },
+  { name: "Fabbrica EOS", logo: fabbricaEos.src },
+  { name: "Galleria Ferrero", logo: galleriaFerrero.src },
+  { name: "Raffaella De Chirico", logo: deChirico.src },
+  { name: "CRAG, Chiono Reisova Art Gallery", logo: crag.src },
+  { name: "Umberto Benappi", logo: umbertoBenappi.src },
 ];
 
 const Gallerie = () => (

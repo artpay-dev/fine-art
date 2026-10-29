@@ -2,26 +2,26 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Section, Heading, PageHero, FinalCta } from "@/components/sections/Primitives";
-import lucaImg from "@/assets/team/luca.jpg.asset.json";
-import rossellaImg from "@/assets/team/rossella.jpg.asset.json";
-import andreaImg from "@/assets/team/andrea.jpg.asset.json";
-import alessiaImg from "@/assets/team/alessia.jpg.asset.json";
-import htsiAward from "@/assets/htsi-award.jpg.asset.json";
-import pressStartup from "@/assets/press-startupitalia.png.asset.json";
-import startupItaliaEvent from "@/assets/team/startupitalia-event.gif.asset.json";
-import pressCorriere from "@/assets/press-corriere.png.asset.json";
-import pressSole24 from "@/assets/press-sole24ore.png.asset.json";
-import pressAnsa from "@/assets/press-ansa.webp.asset.json";
-import pressSky from "@/assets/press-skytg24.png.asset.json";
-import pressHtsi from "@/assets/press-htsi.png.asset.json";
-import pressFirst from "@/assets/press-firstonline.png.asset.json";
-import pressLmf from "@/assets/press-lamiafinanza.jpg.asset.json";
+import lucaImg from "@/assets/team/luca.jpg";
+import rossellaImg from "@/assets/team/rossella.jpg";
+import andreaImg from "@/assets/team/andrea.jpg";
+import alessiaImg from "@/assets/team/alessia.jpg";
+import htsiAward from "@/assets/htsi-award.jpg";
+import pressStartup from "@/assets/startupitalia.png";
+import startupItaliaEvent from "@/assets/team/startupitalia-event.gif";
+import pressCorriere from "@/assets/corriere.png";
+import pressSole24 from "@/assets/sole24ore.png";
+import pressAnsa from "@/assets/ansa.webp";
+import pressSky from "@/assets/skytg24.png";
+import pressHtsi from "@/assets/htsi.png";
+import pressFirst from "@/assets/firstonline.png";
+import pressLmf from "@/assets/lamiafinanza.jpg";
 
 const team = [
-  { name: "Luca Pineider", role: "Founder & CEO", img: lucaImg.url },
-  { name: "Rossella Destefani", role: "Co-Founder & Head of Communication", img: rossellaImg.url },
-  { name: "Andrea Ciaccia", role: "CTO", img: andreaImg.url },
-  { name: "Alessia Cuccu", role: "Head of Sales & Partnership", img: alessiaImg.url },
+  { name: "Luca Pineider", role: "Founder & CEO", img: lucaImg.src },
+  { name: "Rossella Destefani", role: "Co-Founder & Head of Communication", img: rossellaImg.src },
+  { name: "Andrea Ciaccia", role: "CTO", img: andreaImg.src },
+  { name: "Alessia Cuccu", role: "Head of Sales & Partnership", img: alessiaImg.src },
 ];
 
 const advisors = [
@@ -63,14 +63,14 @@ const milestones = [
 ];
 
 const press = [
-  { name: "Corriere della Sera", logo: pressCorriere.url },
-  { name: "Il Sole 24 Ore", logo: pressSole24.url },
-  { name: "ANSA", logo: pressAnsa.url },
-  { name: "Sky TG24", logo: pressSky.url },
-  { name: "HTSI", logo: pressHtsi.url },
-  { name: "StartupItalia Top 100", logo: pressStartup.url },
-  { name: "First Online", logo: pressFirst.url },
-  { name: "La Mia Finanza", logo: pressLmf.url },
+  { name: "Corriere della Sera", logo: pressCorriere.src },
+  { name: "Il Sole 24 Ore", logo: pressSole24.src },
+  { name: "ANSA", logo: pressAnsa.src },
+  { name: "Sky TG24", logo: pressSky.src },
+  { name: "HTSI", logo: pressHtsi.src },
+  { name: "StartupItalia Top 100", logo: pressStartup.src },
+  { name: "First Online", logo: pressFirst.src },
+  { name: "La Mia Finanza", logo: pressLmf.src },
 ];
 
 const numbers = [
@@ -185,7 +185,7 @@ const ChiSiamo = () => (
       <div className="mt-12 grid lg:grid-cols-2 gap-6 items-stretch">
         <div className="p-8 rounded border border-border bg-white flex flex-col">
           <img
-            src={htsiAward.url}
+            src={htsiAward.src}
             alt="HTSI Best Luxury Startup 2025"
             className="w-full rounded mb-6"
             loading="lazy"
@@ -197,7 +197,7 @@ const ChiSiamo = () => (
         </div>
         <div className="p-8 rounded border border-border bg-white flex flex-col">
           <img
-            src={startupItaliaEvent.url}
+            src={startupItaliaEvent.src}
             alt="StartupItalia Top 100"
             className="w-full rounded mb-6"
             loading="lazy"

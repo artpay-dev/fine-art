@@ -2,20 +2,20 @@
 
 import { useEffect, useState } from "react";
 import { Section, Heading, PageHero, FinalCta } from "@/components/sections/Primitives";
-import logoSantander from "@/assets/logo-santander.png.asset.json";
-import logoKlarna from "@/assets/logo-klarna.webp.asset.json";
+import logoSantander from "@/assets/santander.png";
+import logoKlarna from "@/assets/klarna.webp";
 import conformita from "@/assets/conformita-ccd2.png";
 
 const partners = [
   {
     title: "Santander Consumer Finance",
     desc: "Uno dei principali operatori europei del credito al consumo, con importi e durate adatti al mercato dell'arte. Integrazione attiva.",
-    logo: { url: logoSantander.url, alt: "Santander Consumer Finance" },
+    logo: { url: logoSantander.src, alt: "Santander Consumer Finance" },
   },
   {
     title: "Klarna",
     desc: "BNPL per acquisti online e ticket più accessibili. Integrazione attiva.",
-    logo: { url: logoKlarna.url, alt: "Klarna" },
+    logo: { url: logoKlarna.src, alt: "Klarna" },
   },
 ];
 

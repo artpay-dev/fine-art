@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import ArtpayLogo from "@/assets/artpay-logo.png.asset.json";
+import ArtpayLogo from "@/assets/artpay-logo.png";
 import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -78,7 +78,7 @@ const Navbar = () => {
       <div className="mx-auto px-6 lg:px-12 h-16 flex items-center justify-between" style={{ maxWidth: "1200px" }}>
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center">
-            <img src={ArtpayLogo.url} alt="Artpay" className={`h-5 w-auto transition-all duration-300 ${solid ? "" : "brightness-0 invert"}`} />
+            <img src={ArtpayLogo.src} alt="Artpay" className={`h-5 w-auto transition-all duration-300 ${solid ? "" : "brightness-0 invert"}`} />
           </Link>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium">
             <div className="relative" onMouseEnter={openMenu}>
@@ -134,7 +134,7 @@ const Navbar = () => {
           onMouseEnter={openMenu}
         >
           <div className="mx-auto px-6 lg:px-12 pb-4 pt-2 flex items-start gap-8" style={{ maxWidth: "1200px" }}>
-            <img src={ArtpayLogo.url} alt="" aria-hidden="true" className="h-5 w-auto invisible shrink-0" />
+            <img src={ArtpayLogo.src} alt="" aria-hidden="true" className="h-5 w-auto invisible shrink-0" />
             <div className="space-y-3">
               {solutions.map((s) => (
                 <Link key={s.to} href={s.to} className="group block w-fit">

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { Section, Heading, PageHero, InfoCard, TrustBanner, FinalCta } from "@/components/sections/Primitives";
 import FastShowcase from "@/components/sections/FastShowcase";
-import santagostinoLogo from "@/assets/logo-santagostino.png.asset.json";
-import finarteLogo from "@/assets/logo-finarte.webp.asset.json";
+import santagostinoLogo from "@/assets/santagostino.png";
+import finarteLogo from "@/assets/finarte.webp";
 
 const auctionHouses = [
-  { name: "Casa d'Aste Sant'Agostino", logo: santagostinoLogo.url },
-  { name: "Finarte", logo: finarteLogo.url, badge: "Novità" },
+  { name: "Casa d'Aste Sant'Agostino", logo: santagostinoLogo.src },
+  { name: "Finarte", logo: finarteLogo.src, badge: "Novità" },
 ];
 
 const advantages = [

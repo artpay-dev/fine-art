@@ -17,8 +17,8 @@ import {
 } from "lucide-react";
 import { Section, Heading, PageHero, FinalCta, Container } from "@/components/sections/Primitives";
 import RibbonFlow from "@/components/RibbonFlow";
-import artpayLogo from "@/assets/artpay-logo.png.asset.json";
-import operaBlue from "@/assets/opera-blue.jpg.asset.json";
+import artpayLogo from "@/assets/artpay-logo.png";
+import operaBlue from "@/assets/opera-blue.jpg";
 
 type MockupVariant = "genera" | "invia" | "incassi" | "ricevi" | "piano" | "conferma";
 
@@ -358,8 +358,8 @@ const HeroMockup = () => (
           aria-hidden="true"
           className="h-4 w-[55px] bg-primary transition-opacity duration-300 group-hover:opacity-80"
           style={{
-            WebkitMaskImage: `url(${artpayLogo.url})`,
-            maskImage: `url(${artpayLogo.url})`,
+            WebkitMaskImage: `url(${artpayLogo.src})`,
+            maskImage: `url(${artpayLogo.src})`,
             WebkitMaskSize: "contain",
             maskSize: "contain",
             WebkitMaskRepeat: "no-repeat",
@@ -372,7 +372,7 @@ const HeroMockup = () => (
       <div className="mx-4 h-[230px] sm:h-[250px] shrink-0">
         <div className="h-full w-full overflow-hidden rounded-[14px] shadow-lg shadow-[#0B1215]/10 ring-1 ring-black/5">
           <img
-            src={operaBlue.url}
+            src={operaBlue.src}
             alt="Opera"
             loading="lazy"
             className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"

@@ -6,34 +6,33 @@ import { ArrowRight, ArrowUpRight, QrCode, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import GalleryLogos from "@/components/GalleryLogos";
 import { Container, Section, Heading, Label, CtaRow, FinalCta, TrustBanner, InfoCard } from "@/components/sections/Primitives";
-import htsiAward from "@/assets/htsi-award.jpg.asset.json";
-import santanderLogo from "@/assets/santander.png.asset.json";
-import pressCorriere from "@/assets/press-corriere.png.asset.json";
-import pressSole24 from "@/assets/press-sole24ore.png.asset.json";
-import pressAnsa from "@/assets/press-ansa.webp.asset.json";
-import pressSky from "@/assets/press-skytg24.png.asset.json";
-import pressHtsi from "@/assets/press-htsi.png.asset.json";
-import pressStartup from "@/assets/press-startupitalia.png.asset.json";
-import pressFirst from "@/assets/press-firstonline.png.asset.json";
-import pressLmf from "@/assets/press-lamiafinanza.jpg.asset.json";
-import heroVideo from "@/assets/hero.mp4.asset.json";
-import heroPoster from "@/assets/hero-poster.jpg.asset.json";
+import htsiAward from "@/assets/htsi-award.jpg";
+import santanderLogo from "@/assets/santander.png";
+import pressCorriere from "@/assets/corriere.png";
+import pressSole24 from "@/assets/sole24ore.png";
+import pressAnsa from "@/assets/ansa.webp";
+import pressSky from "@/assets/skytg24.png";
+import pressHtsi from "@/assets/htsi.png";
+import pressStartup from "@/assets/startupitalia.png";
+import pressFirst from "@/assets/firstonline.png";
+import pressLmf from "@/assets/lamiafinanza.jpg";
+import heroPoster from "@/assets/hero-poster.jpg";
 import EcosystemDiagram from "@/components/EcosystemDiagram";
 import RibbonFlow from "@/components/RibbonFlow";
-import santagostinoLogo from "@/assets/logo-santagostino.png.asset.json";
-import finarteLogo from "@/assets/logo-finarte.webp.asset.json";
-import galleriaAbbondio from "@/assets/galleria-abbondio.jpg.asset.json";
-import fabbricaEos from "@/assets/fabbrica-eos.jpg.asset.json";
-import galleriaFerrero from "@/assets/galleria-ferrero.jpg.asset.json";
-import deChirico from "@/assets/de-chirico.jpg.asset.json";
-import crag from "@/assets/crag.jpg.asset.json";
-import umbertoBenappi from "@/assets/umberto-benappi.png.asset.json";
-import theOthersLogo from "@/assets/logo-theothers.png.asset.json";
-import thePhairLogo from "@/assets/logo-thephair.png.asset.json";
-import operaBlue from "@/assets/opera-blue.jpg.asset.json";
-import channelGallerie from "@/assets/exhibition-hall.jpg.asset.json";
-import channelFiere from "@/assets/spiral-gallery.jpg.asset.json";
-import channelEcommerce from "@/assets/ecommerce.jpg.asset.json";
+import santagostinoLogo from "@/assets/santagostino.png";
+import finarteLogo from "@/assets/finarte.webp";
+import galleriaAbbondio from "@/assets/galleria-abbondio.jpg";
+import fabbricaEos from "@/assets/fabbrica-eos.jpg";
+import galleriaFerrero from "@/assets/galleria-ferrero.jpg";
+import deChirico from "@/assets/de-chirico.jpg";
+import crag from "@/assets/crag.jpg";
+import umbertoBenappi from "@/assets/umberto-benappi.png";
+import theOthersLogo from "@/assets/logo-theothers.png";
+import thePhairLogo from "@/assets/logo-thephair.png";
+import operaBlue from "@/assets/opera-blue.jpg";
+import channelGallerie from "@/assets/gallerie.jpg";
+import channelFiere from "@/assets/fiere.jpg";
+import channelEcommerce from "@/assets/ecommerce.jpg";
 
 const stats = [
   { value: "€50M+", label: "Volume di transazioni gestito" },
@@ -151,14 +150,14 @@ const channels = [
 ];
 
 const press = [
-  { name: "Corriere della Sera", logo: pressCorriere.url },
-  { name: "Il Sole 24 Ore", logo: pressSole24.url },
-  { name: "ANSA", logo: pressAnsa.url },
-  { name: "Sky TG24", logo: pressSky.url },
-  { name: "HTSI", logo: pressHtsi.url },
-  { name: "StartupItalia Top 100", logo: pressStartup.url },
-  { name: "First Online", logo: pressFirst.url },
-  { name: "La Mia Finanza", logo: pressLmf.url },
+  { name: "Corriere della Sera", logo: pressCorriere.src },
+  { name: "Il Sole 24 Ore", logo: pressSole24.src },
+  { name: "ANSA", logo: pressAnsa.src },
+  { name: "Sky TG24", logo: pressSky.src },
+  { name: "HTSI", logo: pressHtsi.src },
+  { name: "StartupItalia Top 100", logo: pressStartup.src },
+  { name: "First Online", logo: pressFirst.src },
+  { name: "La Mia Finanza", logo: pressLmf.src },
 ];
 
 
@@ -167,7 +166,7 @@ const FastMockup = ({ index }: { index: number }) => {
   if (index === 0) {
     return (
       <div className={`${base} !p-0`}>
-        <img loading="lazy" src={operaBlue.url} alt="Opera" className="w-full h-16 shrink-0 object-cover rounded-t-xl" />
+        <img loading="lazy" src={operaBlue.src} alt="Opera" className="w-full h-16 shrink-0 object-cover rounded-t-xl" />
         <div className="p-3 flex flex-col flex-1 min-h-0">
           <div className="space-y-2">
             <div>
@@ -305,8 +304,7 @@ const Index = () => {
       <section className="relative overflow-hidden bg-primary grain min-h-screen flex flex-col">
         <video
           className="absolute inset-0 h-full w-full object-cover"
-          src={heroVideo.url}
-          poster={heroPoster.url}
+          poster={heroPoster.src}
           preload="metadata"
           autoPlay
           muted
@@ -436,7 +434,7 @@ const Index = () => {
         </p>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="aspect-[5/2] border border-border rounded overflow-hidden">
-            <img loading="lazy" src={santanderLogo.url} alt="Santander" className="w-full h-full object-cover" />
+            <img loading="lazy" src={santanderLogo.src} alt="Santander" className="w-full h-full object-cover" />
           </div>
           <div className="aspect-[5/2] border border-border rounded overflow-hidden">
             <svg viewBox="0 0 400 290" className="w-full h-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
@@ -461,8 +459,8 @@ const Index = () => {
           <span className="text-xs text-slate">Case d'asta</span>
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { name: "Casa d'Aste Sant'Agostino", logo: santagostinoLogo.url },
-              { name: "Finarte", logo: finarteLogo.url, badge: "Novità" },
+              { name: "Casa d'Aste Sant'Agostino", logo: santagostinoLogo.src },
+              { name: "Finarte", logo: finarteLogo.src, badge: "Novità" },
             ].map((house) => (
               <div key={house.name} className="relative aspect-[5/2] border border-border rounded bg-card flex items-center justify-center">
                 {house.badge && (
@@ -488,8 +486,8 @@ const Index = () => {
           <span className="text-xs text-slate">Fiere d'arte</span>
           <div className="mt-4 flex flex-wrap gap-6">
             {[
-              { name: "The Others", logo: theOthersLogo.url },
-              { name: "The Phair", logo: thePhairLogo.url },
+              { name: "The Others", logo: theOthersLogo.src },
+              { name: "The Phair", logo: thePhairLogo.src },
             ].map((fair) => (
               <div key={fair.name} className="relative h-32 px-10 min-w-[280px] border border-border rounded bg-card flex items-center justify-center">
                 <img loading="lazy" src={fair.logo} alt={fair.name} className="max-h-14 max-w-[220px] object-contain" />
@@ -501,12 +499,12 @@ const Index = () => {
           <span className="text-xs text-slate">Gallerie</span>
           <GalleryLogos
             galleries={[
-              { name: "Galleria Giampaolo Abbondio", logo: galleriaAbbondio.url },
-              { name: "Fabbrica EOS", logo: fabbricaEos.url },
-              { name: "Galleria Ferrero", logo: galleriaFerrero.url },
-              { name: "Raffaella De Chirico", logo: deChirico.url },
-              { name: "CRAG, Chiono Reisova Art Gallery", logo: crag.url },
-              { name: "Umberto Benappi", logo: umbertoBenappi.url },
+              { name: "Galleria Giampaolo Abbondio", logo: galleriaAbbondio.src },
+              { name: "Fabbrica EOS", logo: fabbricaEos.src },
+              { name: "Galleria Ferrero", logo: galleriaFerrero.src },
+              { name: "Raffaella De Chirico", logo: deChirico.src },
+              { name: "CRAG, Chiono Reisova Art Gallery", logo: crag.src },
+              { name: "Umberto Benappi", logo: umbertoBenappi.src },
             ]}
           />
         </div>
@@ -522,7 +520,7 @@ const Index = () => {
               <InfoCard
                 title={c.title}
                 plain
-                image={{ url: c.image.url, alt: c.alt }}
+                image={{ url: c.image.src, alt: c.alt }}
                 desc={
                   <>
                     {c.desc}
@@ -545,7 +543,7 @@ const Index = () => {
             <span className="text-xs text-slate">Riconoscimenti</span>
             <div className="mt-4 p-8 rounded border border-border bg-white">
               <img
-                src={htsiAward.url}
+                src={htsiAward.src}
                 alt="HTSI Best Luxury Start Up Award, Il Sole 24 Ore"
                 className="w-full rounded mb-6"
                 loading="lazy"

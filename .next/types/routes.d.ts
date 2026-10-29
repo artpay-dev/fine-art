@@ -5,12 +5,13 @@ type AppRoutes = "/" | "/accedi" | "/chi-siamo" | "/come-funziona" | "/contatti"
 type PageRoutes = never
 type LayoutRoutes = "/"
 type RedirectRoutes = never
-type RewriteRoutes = never
+type RewriteRoutes = "/__l5e/[[...path]]"
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
 
 
 interface ParamMap {
   "/": {}
+  "/__l5e/[[...path]]": { "path"?: string[]; }
   "/accedi": {}
   "/chi-siamo": {}
   "/come-funziona": {}

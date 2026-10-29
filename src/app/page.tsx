@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { buildMetadata, breadcrumbLd, SITE } from "@/lib/metadata";
-import artpayLogo from "@/assets/artpay-logo.png.asset.json";
+import artpayLogo from "@/assets/artpay-logo.png";
 import IndexPage from "@/views/Index";
 
 const jsonLd = [
@@ -10,7 +10,7 @@ const jsonLd = [
     name: "Artpay",
     legalName: "Artpay S.r.l.",
     url: `${SITE}/`,
-    logo: `${SITE}${artpayLogo.url}`,
+    logo: `${SITE}${artpayLogo.src}`,
     email: "hello@artpay.art",
     areaServed: "IT",
     description: "Pagamento rateale per le case d'asta e per il mercato dell'arte.",

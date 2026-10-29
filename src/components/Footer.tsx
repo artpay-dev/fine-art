@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ArtpayLogo from "@/assets/artpay-logo.png.asset.json";
+import ArtpayLogo from "@/assets/artpay-logo.png";
 
 const groups = [
   {
@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="grid gap-12 lg:grid-cols-5">
           <div>
             <Link href="/" className="inline-flex items-center">
-              <img loading="lazy" src={ArtpayLogo.url} alt="Artpay" className="h-6 w-auto" />
+              <img loading="lazy" src={ArtpayLogo.src} alt="Artpay" className="h-6 w-auto" />
             </Link>
             <p className="mt-4 text-sm text-pewter leading-relaxed max-w-xs">
               Il pagamento rateale per le case d'asta e per il mercato dell'arte, per rendere l'acquisto facile, veloce e accessibile.
