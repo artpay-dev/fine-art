@@ -1,4 +1,5 @@
 {
   "/page": "app/page.js",
-  "/soluzioni/fiere/page": "app/soluzioni/fiere/page.js"
+  "/soluzioni/fiere/page": "app/soluzioni/fiere/page.js",
+  "/demo/page": "app/demo/page.js"
 }
